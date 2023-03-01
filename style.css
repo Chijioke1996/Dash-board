@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    background-color: rgb(251, 247, 247);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+.statusbar {
+    background-color: white;
+    width: 100%;
+    height: 73px;
+    text-align: center;
+    position: fixed;
+}
+
+h1 {
+    font-size: 15px;
+    padding-top: 1.5%;
+    text-align: center;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(41, 84, 41);
+    position: relative;
+    margin-left: 87%;
+    margin-top: -30px;
+
+
+}
+
+.arrow {
+    width: 17px;
+    position: relative;
+    margin-top: -23px;
+    margin-left: calc(88% + 12px);
+    height: 17px;
+    cursor: pointer;
+
+}
+
+
+.side-bar {
+    background-color: rgb(28, 48, 28);
+    width: 70px;
+    height: 100%;
+    margin-bottom: -10px;
+    position: fixed;
+
+}
+
+.menu {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-top: 30px;
+}
+
+ul {}
+
+ul>li {
+    list-style: none;
+    flex-direction: column;
+    display: list-item;
+    margin: 10px 3px;
+    margin-left: 15px;
+
+
+}
+
+.hover {
+    width: 70px;
+    height: 45px;
+}
+
+ul {
+    cursor: pointer;
+}
+
+
+
+ul>li>a {
+
+    color: white;
+}
+
+.menu:hover {
+    color: rgb(97, 174, 97);
+
+}
+
+
+.logo {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-top: 20px;
+    background: url(luckee.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.text {
+    color: white;
+    position: relative;
+    margin-left: 50px;
+    margin-top: -25px;
+    display: none;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 16px;
+    height: calc(1px + 0.05rem);
+    display: block;
+    background-color: black;
+    margin: 5px auto;
+    position: relative;
+    left: -42%;
+    top: -28px;
+}
+
+
+@media (300px <=width < 900px) {
+    .side-bar {
+        display: none;
+    }
+
+    h1 {
+        font-size: 14px;
+        margin-top: 17px;
+        text-align: center;
+    }
+
+    .circle {
+        margin-left: 78%;
+        margin-top: -28px;
+    }
+
+    .arrow {
+        margin-left: calc(84% + 4px);
+        height: 17px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar {
+        /* transform: translateY(8px) rotate(43deg); */
+        opacity: 0;
+    }
+
+    /* .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-43deg);
+    } */
+    .statusbar.active {
+        opacity: 0.32;
+    }
+
+    body.active {
+        opacity: 0.32;
+
+    }
+
+    body {
+        cursor: pointer;
+    }
+
+    .side-bar {
+        background-color: rgb(28, 48, 28);
+        width: 250px;
+        margin-bottom: -10px;
+        display: flex;
+        display: none;
+
+
+    }
+
+    .side-bar.active {
+        display: block;
+        transition: 0.5s;
+    }
+
+    .menu {
+        width: 25px;
+        height: 25px;
+        margin-top: 25px;
+
+    }
+
+
+
+    .text {
+        display: block;
+    }
+
+    .text:hover {
+        color: rgb(97, 174, 97);
+
+    }
+
+
+
+    ul>li {
+
+        margin: 7px 3px;
+        margin-left: 15px;
+
+    }
+
+    ul>li>a {
+
+        color: white;
+    }
+
+    .logo {
+        width: 40px;
+        height: 30px;
+
+        margin-top: 20px;
+
+
+    }
+
+
+
+}
