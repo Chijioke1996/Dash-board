@@ -55,6 +55,50 @@ h1 {
 
 }
 
+.tag {
+    text-decoration: none;
+    color: black;
+}
+
+.drop-down {
+    width: 170px;
+    height: 90px;
+    background-color: white;
+    border-radius: 7px;
+    position: fixed;
+    margin-top: -0.3%;
+    margin-left: 78.5%;
+    display: none;
+   
+}
+
+.drop-down.active {
+    display: block;
+    
+    
+
+}
+
+.icon {
+    width: 23px;
+    height: 23px;
+    color: black;
+    margin-left: 6%;
+    margin-top: 14px;
+
+}
+
+.icon-text {
+    margin-top: -25px;
+    margin-left: 23.7%;
+    font-size: 18px;
+
+}
+
+.icon-text:hover {
+    color: rgb(46, 175, 46);
+}
+
 
 .side-bar {
     background-color: rgb(28, 48, 28);
@@ -140,6 +184,17 @@ ul>li>a {
     position: relative;
     left: -42%;
     top: -28px;
+}
+
+/* CONTENT CONTAINER */
+.content-container {
+    width: calc(100% - 70PX);
+    height: 100%;
+    background-color: aqua;
+    margin-left: 70px;
+    margin-top: 73px;
+    position: fixed;
+    background-color: rgb(238, 238, 244);
 }
 
 
@@ -249,6 +304,17 @@ ul>li>a {
 
     }
 
+    .content-container {
+        width: calc(100% + 70px);
+        margin-left: -30px;
+        
+
+    }
+
+    .drop-down {
+        margin-left: 64%;
+    }
 
 
-}
+
+    }
