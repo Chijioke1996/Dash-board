@@ -9,7 +9,7 @@ body {
     width: 100%;
 }
 
-.container {
+.container1 {
     background-color: rgb(251, 247, 247);
     position: fixed;
     width: 100%;
@@ -69,13 +69,13 @@ h1 {
     margin-top: -0.3%;
     margin-left: 78.5%;
     display: none;
-   
+
 }
 
 .drop-down.active {
     display: block;
-    
-    
+
+
 
 }
 
@@ -197,6 +197,32 @@ ul>li>a {
     background-color: rgb(238, 238, 244);
 }
 
+.container-sub {
+    width: 82%;
+    height: 500px;
+    border: 2px solid black;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 26px;
+    border-radius: 8px;
+}
+
+.underline {
+    width: 81.5%;
+    height: 0.07rem;
+    background-color: rgb(169, 165, 165);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.para1 {
+    font-size: 29px;
+    margin-top: 190px;
+    text-align: left;
+    margin-left: 9%;
+    color: gray;
+}
+
 
 @media (300px <=width < 900px) {
     .side-bar {
@@ -224,17 +250,10 @@ ul>li>a {
     }
 
     .hamburger.active .bar {
-        /* transform: translateY(8px) rotate(43deg); */
+
         opacity: 0;
     }
 
-    /* .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-43deg);
-    } */
     .statusbar.active {
         opacity: 0.32;
     }
@@ -281,6 +300,17 @@ ul>li>a {
 
     }
 
+    .container-sub {
+        width: 82%;
+        height: 500px;
+        border: 2px solid black;
+        
+        display: flex;
+        margin-left: 10px;
+        margin-top: 26px;
+        border-radius: 8px;
+    }
+
 
 
     ul>li {
@@ -307,7 +337,7 @@ ul>li>a {
     .content-container {
         width: calc(100% + 70px);
         margin-left: -30px;
-        
+
 
     }
 
@@ -317,4 +347,6 @@ ul>li>a {
 
 
 
-    }
+
+
+}
