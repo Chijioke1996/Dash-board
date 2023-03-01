@@ -1,6 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const statusBar = document.querySelector(".statusbar");
 const sideBar = document.querySelector(".side-bar");
+const logo = document.querySelector(".logo");
 const sideBarList = document.querySelectorAll(".side-bar-list");
 
 
@@ -11,23 +12,23 @@ hamburger.addEventListener("click", () => {
 
 })
 
-sideBarList.forEach(list =>
+logo.addEventListener("click", () => {
+    sideBar.classList.remove("active");
+    hamburger.classList.remove("active");
+    statusBar.classList.remove("active");
+
+})
+
+
+
+const fish = sideBarList.forEach(list =>
     list.addEventListener("click", () => {
         sideBar.classList.remove("active");
         hamburger.classList.remove("active");
         statusBar.classList.remove("active");
 
 
-
     }))
 
-    if (sideBarList = false) {
+    console.log(fish);
 
-        function close () {
-            sideBar.classList.remove("active");
-            hamburger.classList.remove("active");
-            statusBar.classList.remove("active");  
-        }
-           
-        
-    }
