@@ -116,7 +116,7 @@ h1 {
     margin-top: 30px;
 }
 
-ul {}
+
 
 ul>li {
     list-style: none;
@@ -194,21 +194,21 @@ ul>li>a {
     margin-left: 70px;
     margin-top: 73px;
     position: fixed;
-    background-color: rgb(238, 238, 244);
+    --tw-bg-opacity: 1;
+    background-color: rgb(244 247 250 / var(--tw-bg-opacity));
 }
 
-.container-sub {
+.card {
     width: 82%;
     height: 500px;
-    border: 2px solid black;
     position: relative;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     margin-top: 26px;
     border-radius: 8px;
 }
 
 .underline {
-    width: 81.5%;
+    width: 82%;
     height: 0.07rem;
     background-color: rgb(169, 165, 165);
     margin-left: 10px;
@@ -223,8 +223,42 @@ ul>li>a {
     color: gray;
 }
 
+/* RECENT ACTIVITIES TABLE */
+.table {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    font-weight: normal;
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
 
-@media (300px <=width < 900px) {
+}
+
+.table thead th {
+    background-color: white;
+    color: black;
+    border-bottom: 0.01rem solid black;
+}
+
+.table td,
+.table th {
+    padding: 10px 20px;
+    text-align: center;
+    
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 1px solid white;
+}
+
+
+@media (300px <= width < 900px) {
     .side-bar {
         display: none;
     }
@@ -300,16 +334,6 @@ ul>li>a {
 
     }
 
-    .container-sub {
-        width: 82%;
-        height: 500px;
-        border: 2px solid black;
-        
-        display: flex;
-        margin-left: 10px;
-        margin-top: 26px;
-        border-radius: 8px;
-    }
 
 
 
@@ -339,14 +363,67 @@ ul>li>a {
         margin-left: -30px;
 
 
+
     }
 
     .drop-down {
         margin-left: 64%;
     }
 
+    .dashboard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -30px;
+      
+        
+       
+    }
 
 
 
 
+
+
+
+}
+
+
+/* LOADER */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s ;
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
 }
