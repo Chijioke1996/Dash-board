@@ -1,39 +1,176 @@
 {
     "headers": [
         "User ID",
-        "Name",
+        "First name",
+        "Last name",
         "Occupation",
-        "Age"
-    ], 
-
+        "Age",
+        "College",
+        "Favourite Soda"
+    ],
     "rows": [
-
+        [
+            "00001",
+            "John",
+            "Doe",
+            "Programmer",
+            "32",
+            "Stanford University",
+            "Pepsi"
+        ],
+        [
+            "00002",
+            "Jane",
+            "Doe",
+            "Doctor",
+            "45",
+            "Harvard University",
+            "Coca-Cola"
+        ],
+        [
+            "00003",
+            "Bob",
+            "Smith",
+            "Teacher",
+            "38",
+            "University of Michigan",
+            "Sprite"
+        ],
+        [
+            "00004",
+            "Alice",
+            "Johnson",
+            "Lawyer",
+            "50",
+            "Yale University",
+            "Fanta"
+        ],
+        [
+            "00005",
+            "Mark",
+            "Brown",
+            "Marketing Manager",
+            "28",
+            "University of California, Berkeley",
+            "Dr Pepper"
+        ],
+        [
+            "00006",
+            "Amy",
+            "Davis",
+            "Nurse",
+            "33",
+            "Johns Hopkins University",
+            "Mountain Dew"
+        ],
         [
             "00007",
             "Chijioke",
+            "Ewuzie",
             "Engineer",
-            "26"
+            "26",
+            "Delta University",
+            "Coke"
         ],
-
         [
-            "20789",
-            "Sule",
-            "Software Engineer",
-            "19"
+            "00008",
+            "Sarah",
+            "Lee",
+            "Accountant",
+            "42",
+            "University of Texas at Austin",
+            "Pepsi"
         ],
-
         [
-            "30721",
-            "Kwado",
-            "Billionaire",
-            "22"
+            "00009",
+            "Peter",
+            "Garcia",
+            "Architect",
+            "57",
+            "Cornell University",
+            "Coca-Cola"
         ],
-
         [
-            "55551",
-            "Reagan",
-            "Tech Bro",
-            "24"
+            "00010",
+            "Emily",
+            "Nguyen",
+            "Graphic Designer",
+            "29",
+            "Rhode Island School of Design",
+            "Sprite"
+        ],
+        [
+            "00011",
+            "David",
+            "Hernandez",
+            "Chef",
+            "40",
+            "Culinary Institute of America",
+            "Fanta"
+        ],
+        [
+            "00012",
+            "Jennifer",
+            "Kim",
+            "Data Analyst",
+            "27",
+            "Massachusetts Institute of Technology",
+            "Dr Pepper"
+        ],
+        [
+            "00013",
+            "Kevin",
+            "Chan",
+            "Product Manager",
+            "34",
+            "University of California, Los Angeles",
+            "Mountain Dew"
+        ],
+        [
+            "00014",
+            "Linda",
+            "Gonzalez",
+            "HR Manager",
+            "48",
+            "University of Southern California",
+            "Coke"
+        ],
+        [
+            "00015",
+            "Adam",
+            "Jackson",
+            "Sales Executive",
+            "31",
+            "University of Pennsylvania",
+            "Pepsi"
+        ],
+        [
+            "00016",
+            "Cindy",
+            "Wang",
+            "Marketing Coordinator",
+            "25",
+            "University of California, San Diego",
+            "Coca-Cola"
+        ],
+        [
+            "00017",
+            "Matthew",
+            "Brown",
+            "Research Scientist",
+            "39",
+            "California Institute of Technology",
+            "Sprite"
+        ],
+        [
+            "00018",
+            "Karen",
+            "Taylor",
+            "Operations Manager",
+            "44",
+            "Duke University",
+            "Fanta"
         ]
     ]
 }
+            

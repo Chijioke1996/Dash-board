@@ -35,6 +35,28 @@
         </div>
     </div>
 
+    <script>
+
+        //   TO CHANGE BORDER COLOUR OF SIGNUP PAGE ON CLICK
+
+        const text1 = document.querySelector(".text1")
+        const text2 = document.querySelector(".text2")
+
+        text1.addEventListener("click", () => {
+            text1.classList.toggle("active")
+            text2.classList.remove("active")
+        })
+
+        text2.addEventListener("click", () => {
+            text2.classList.toggle("active")
+            text1.classList.remove("active")
+        })
+
+        console.log(fish);
+
+
+    </script>
+
 </body>
 
 </html>

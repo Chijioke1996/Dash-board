@@ -53,8 +53,17 @@ form {
     height: 50px;
     width: 470px;
     border: 2px solid rgb(245, 239, 239);
+    padding: 10px;
 
 }
+
+.text1.active {
+        border: 3px solid rgb(53, 186, 53);
+    }
+
+    .text2.active {
+        border: 3px solid rgb(53, 186, 53);
+    }
 
 
 
@@ -156,8 +165,13 @@ h4 {
         width: 370px;
         border: 1px solid rgb(245, 239, 239);
         border-radius: 5px;
+        
 
     }
+
+    
+
+   
 
     .btn {
         margin-left: 68%;

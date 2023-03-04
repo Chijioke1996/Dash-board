@@ -1,9 +1,9 @@
 const hamburger = document.querySelector(".hamburger");
-const statusBar = document.querySelector(".statusbar");
+const statusBar = document.querySelector(".status-bar");
 const sideBar = document.querySelector(".side-bar");
 const logo = document.querySelector(".logo");
 const sideBarList = document.querySelectorAll(".side-bar-list");
-const contentContainer = document.querySelector(".content-container");
+const section = document.querySelector(".section");
 
 
 hamburger.addEventListener("click", () => {
@@ -31,7 +31,7 @@ sideBarList.forEach(list =>
 
     }))
 
-contentContainer.addEventListener("click", () => {
+section.addEventListener("click", () => {
     sideBar.classList.remove("active");
     hamburger.classList.remove("active");
     statusBar.classList.remove("active");
@@ -57,8 +57,9 @@ dropDownItems.forEach(dropDownItem => {
     })
 })
 
-contentContainer.addEventListener("click", () => {
+section.addEventListener("click", () => {
     dropDown.classList.remove("active")
+    
 
 
 })
@@ -120,7 +121,7 @@ window.addEventListener("load", () => {
       document.body.removeChild(loader);
     });
   });
-
+  
 
 
 
